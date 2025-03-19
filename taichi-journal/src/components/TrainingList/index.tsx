@@ -33,6 +33,7 @@ const TrainingList = (): JSX.Element => {
           <ListItem key={index}>
             <SportsMartialArtsIcon />
             <StatusBadge status={training.status}>
+              {/* TODO: Very dirty workaround! Ask backend to add id to the training. */}
               <Link href={`/trainings/${index}`}>
                 <ListItemText primary={training.name} />
                 <p className={styles.statusText}>Status: {training.status}</p>
