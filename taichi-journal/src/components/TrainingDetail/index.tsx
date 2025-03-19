@@ -17,7 +17,7 @@ const TrainingDetail = ({ training }: Props) => {
   const [isDelete, setIsDelete] = useState(false);
 
   useEffect(() => {
-    // Setting training from mock data
+    // Setting training from mock data, workaround.
     // TODO: Set training from API endpoint or GraphQL based on its id
     setOneTraining(training);
   }, []);

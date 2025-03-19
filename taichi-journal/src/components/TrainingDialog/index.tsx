@@ -33,7 +33,7 @@ const TrainingDialog = ({
   });
   const [isMessageVisible, setIsMessageVisible] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = (): void => {
     if (training === null) {
       setIsMessageVisible(true);
       // Create training in mock data
@@ -57,7 +57,7 @@ const TrainingDialog = ({
   const handleClose = (
     event: React.SyntheticEvent | Event,
     reason?: SnackbarCloseReason
-  ) => {
+  ): void => {
     if (reason === "clickaway") {
       return;
     }

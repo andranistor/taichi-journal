@@ -27,7 +27,7 @@ const TrainingDeleteDialog = ({
   const router = useRouter();
   const [isMessageVisible, setIsMessageVisible] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = (): void => {
     // Delete training from mock data
     // TODO: Delete training using API endpoint or GraphQL using instead id of the trainig
     const index = mockData.findIndex(
@@ -44,7 +44,7 @@ const TrainingDeleteDialog = ({
   const handleClose = (
     event: React.SyntheticEvent | Event,
     reason?: SnackbarCloseReason
-  ) => {
+  ): void => {
     if (reason === "clickaway") {
       return;
     }

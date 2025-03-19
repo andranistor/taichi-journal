@@ -15,7 +15,7 @@ const TrainingPage = () => {
     redirectHome();
   }
 
-  // This is only for the purpose of using mock data
+  // This is a dirty workaround only for the purpose of using mock data
   const training = mockData[Number(id)];
 
   return (

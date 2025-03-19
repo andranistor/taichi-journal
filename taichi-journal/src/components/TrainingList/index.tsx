@@ -19,7 +19,7 @@ const TrainingList = (): JSX.Element => {
     setTrainings(mockData);
   }, []);
 
-  const handleCreate = () => {
+  const handleCreate = (): void => {
     setIsOpen(true);
   };
 
