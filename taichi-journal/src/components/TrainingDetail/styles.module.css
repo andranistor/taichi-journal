@@ -1,0 +1,9 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.statusText {
+  font-size: 0.8rem;
+}
